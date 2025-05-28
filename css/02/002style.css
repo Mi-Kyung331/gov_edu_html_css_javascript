@@ -57,6 +57,22 @@ body,
         font-size: 3rem;
     }
 
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3rem;
+
+        & > input {
+        background-color: transparent;
+        border: 0.1rem solid green;
+        outline: none;
+
+        width: 30rem;
+        padding: 1rem;
+    }
+    }
+
     p {
         font-size: 2%;
         font-weight: 600;
