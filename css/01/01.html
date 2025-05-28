@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+    <style>
+        * {
+            font-style: italic;
+        }
+        
+        p {
+            color: blue !important;
+            font-size: 20px;
+            background-color: #ffffff00;
+        }
+        #p {
+            color: green;
+            font-size: 30px;
+        }
+        .p {
+            color: purple;
+            font-size: 40px;
+        }
+        p {
+            color: pink;
+            font-size: 40px;
+        }
+
+        /* div > h1 > .naver {
+            color: brown;
+        } */
+        .naver {
+            color: green;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: red; font-size: 40px;">제목</h1>
+
+    <div>내용</div>
+
+    <p>내용 2-1</p>
+    <p id="p">내용 2-2</p>
+    <p class="p">내용 2-3</p>
+    <p id="p" class="p">내용 2-4</p>
+    <p>
+        <span>내용 2-5</span>
+    </p>
+    <!-- 우선순위가 존재함 id 선택자 > class 선택자 > tag 선택자 -->
+    <!-- * : 전체 선택자 -->
+    <!-- 위에서 아래로 적용이 된다. -->
+
+    <span>내용3</span>
+
+    <div>
+        <h1>
+            <a class="naver" href="http://naver.com">네이버</a>
+        </h1>
+    </div>
+</body>
+</html>

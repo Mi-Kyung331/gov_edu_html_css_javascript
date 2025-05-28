@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%
+}
+
+.search-box {
+    border: 0.1rem solid black;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+    width: fit-content;
+
+    & > input {
+        border: none;
+        outline: none;
+    }
+}
+
+.search-box2 {
+    margin-top: 2rem;
+    position: relative;
+    width: fit-content;
+
+    & > input {
+        box-sizing: border-box;
+        padding-right: 4rem;
+        height: 3.3rem;
+        
+    }
+
+    & > button {
+        position: absolute;
+        right: 0.5rem;
+        border: none;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+}
+
+.p-box {
+    margin-top: 2rem;
+
+    position: relative;
+
+    box-sizing: border-box;
+    border: 0.1rem solid black;
+    width: 50rem;
+    height: 30rem;
+}
+
+.c-box {
+    box-sizing: border-box;
+    border: 0.1rem solid black;
+    width: 10rem;
+    height: 10rem;
+}
+
+.c-box1 {
+    background-color: tomato;
+}
+
+.c-box2 {
+    background-color: darkolivegreen;
+}
+.cc-box {
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+
+    border: 0.1rem solid black;
+    width: 5rem;
+    height: 5rem;
+    background-color: thistle;
+}
+
+.c-box3 {
+    background-color: cadetblue;
+}

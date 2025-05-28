@@ -1,0 +1,106 @@
+
+/* 화면 세로 선 */
+body,
+        html,
+        .desktop,
+        .overlay {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            z-index: 4;
+            pointer-events: none;
+        }
+
+        .overlay.overlay--vignette {
+            background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 100%);
+        }
+
+        .overlay.overlay--scanline {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.33) 25%, rgba(0, 0, 0, 0.33) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.33) 75%, rgba(0, 0, 0, 0.33) 100%);
+            background-size: 4px 4px;
+        }
+
+        .overlay.overlay--vignette,
+        .overlay.overlay--scanline {
+            top: 0;
+        }
+        
+
+    @font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+    }
+
+    * {
+        font-family: 'DungGeunMo';
+        font-optical-sizing: auto;
+        font-size: 62.5%;
+        color: green;
+    }
+    body {
+        background-color: black;
+    }
+
+
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .text {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2%;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 1rem;
+        word-spacing: 1rem;
+    }
+
+    ul {
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.5rem;
+        list-style: none;
+    }
+    li {
+        padding-bottom: 0.2rem;
+    }
+
+    table {
+        margin: auto;
+        border: 0.1rem solid;
+        text-align: center;
+        font-size: 6rem;
+    }
+    td {
+        border: 0.1rem dashed green;
+        padding: 0.8rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .link {
+        margin: 2rem;
+        text-align: center;
+
+        font-size: 3.5rem;
+        letter-spacing: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: rgba(0, 128, 0, 0.384);
+    }
+    a:hover {
+        color: green;
+        transition: 0.5s
+    }

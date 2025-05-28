@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text style</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@500&display=swap');
+
+        * {
+            font-family: "Noto Sans KR", sans-serif;;
+            /* font-family: "Noto Sans KR", sans-serif; */
+            font-optical-sizing: auto;
+            font-size: 62.5%;
+            /* 
+                웹 기본 폰트 사이즈: 16px → 1rem → 10px 
+
+            */
+            /* background-color: black; */
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: center;
+            color: red;
+            letter-spacing: 1rem;
+            word-spacing: 1rem;
+            text-decoration: line-through;
+            text-shadow: 0.5rem 0.5rem 1rem black;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            /* 테두리 합치기 - 표에서만 적용 */
+            text-align: center;
+        }
+        td {
+            border: 0.1rem solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <p>텍스트를 표현하는 다양한 스타일</p>
+
+    <ul>
+        <li>목차1</li>
+        <li>목차2</li>
+        <li>목차3</li>
+        <li>목차4</li>
+    </ul>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>번호</td>
+                <td>이름</td>
+                <td>나이</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>김준일</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <span style="display: block;">네이버</span>
+
+</body>
+</html>
