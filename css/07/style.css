@@ -1,0 +1,141 @@
+html {
+    font-size: 62.5%;
+    background-color: #fafafa;
+}
+
+div > h1 + p {
+    color: red;
+}
+
+.buttons {
+    & > div {
+        box-sizing: border-box;
+        border: 0.1rem solid #dbdbdb;
+        border-radius: 0.4rem;
+        background-color: whitesmoke;
+
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fafafa;
+            /* 백그라운드 컬러보다 약간 연하게 하면 보기 좋음 */
+        }
+        &:active {
+            background-color: #eee;
+            /* hover보다는 조금 진하게 해주면 보기 좋음 */
+        }
+    }
+
+    & > a {
+        box-sizing: border-box;
+        border: 0.1rem solid #dbdbdb;
+        border-radius: 0.4rem;
+        background-color: whitesmoke;
+
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        cursor: pointer;
+        color: #222;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #fafafa;
+            /* 백그라운드 컬러보다 약간 연하게 하면 보기 좋음 */
+        }
+        &:active {
+            background-color: #eee;
+            /* hover보다는 조금 진하게 해주면 보기 좋음 */
+        }
+    }
+
+    & > button {
+        box-sizing: border-box;
+        border: 0.1rem solid #dbdbdb;
+        border-radius: 0.4rem;
+        background-color: whitesmoke;
+
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        cursor: pointer;
+        color: #222;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #fafafa;
+            /* 백그라운드 컬러보다 약간 연하게 하면 보기 좋음 */
+        }
+        &:active {
+            background-color: #eee;
+            /* hover보다는 조금 진하게 해주면 보기 좋음 */
+        }
+
+        &:disabled {
+            background-color: red;
+            cursor: default;
+        }
+    }
+}
+
+#button2:target {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(106, 255, 205);
+}
+
+
+.check > input[type=checkbox] + label {
+    color: blue;
+}
+.check > input[type=checkbox]:checked + label {
+    color: red;
+}
+
+.check > input[type=radio] + label {
+    color: red;
+}
+
+.check > input[type=radio]:checked + label {
+    color: blue;
+}
+
+
+.not > input:not(#text2) {
+    background-color: green;
+}
+
+
+.menu-list {
+     & > li {
+        position: relative;
+        border: 0.1rem solid #dbdbdb;
+        width: fit-content;
+        cursor: pointer;
+
+        & > div {
+            display: none;
+        }
+
+        &:active > div {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -22rem;
+            background-color: yellow;
+            width: 20rem;
+        }
+     }
+}
+
+.menu-list2 li:nth-of-type(3n-1) {
+    color: red;
+}
+.menu-list2 > li::before {
+    content: "menu ";
+    border: 0.1rem solid #dbdbdb;
+    color: pink;
+}
+.menu-list2 > li::after {
+    content: " →" ;
+}
