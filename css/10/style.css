@@ -76,6 +76,130 @@ html, body {
     }
 }
 
+.auth-items {
+    box-sizing: border-box;
+    padding-top: 2.4rem;
+}
+
+.auth-input-text {
+    margin: 0 auto 0.6rem;
+    width: 27rem;
+    height: 3.8rem;
+}
+
+.auth-input-border {
+    position: relative;
+    transition: all 0.1s ease-in-out;
+    box-sizing: border-box;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    padding: 0.9rem 0.8rem 0.7rem;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+
+    & > input {
+        position: relative;
+        box-sizing: border-box;
+        z-index: 1;
+        border: none;
+        outline: none;
+        background-color: transparent;   
+
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 1.2rem;
+    }
+
+    & > label {
+        position: absolute;
+        transition: all 0.1s ease-in-out;
+        display: block;
+        top: 50%;
+
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: #737373;
+    }
+}
+
+.is-not-empty {
+    padding: 1.4rem 0.8rem 0.2rem;
+
+    & > label {
+        top: 25%;
+        font-size: 1rem;
+    }
+}
+
+/* 로그인버튼 */
+.auth-button {
+    margin: 0.8rem auto;
+    width: 27rem;
+    height: 3.2rem;
+
+    & > button {
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0.8rem;
+
+        width: 100%;
+        height: 100%;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: white;
+        background-color: #0095f6;
+    }
+}
+
+.or-else {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.4rem 4rem 2.2rem;
+
+    & > div:not(div:nth-of-type(2)) {
+        flex-grow: 1;
+        height: 0.1rem;
+        background-color: #dbdbdb;
+    }
+
+    & > div:nth-of-type(2) {
+        margin: 0 1.8rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #737373;
+    }
+}
+
+.oauth2-buttons {
+    margin: 0.8rem 4rem;
+    width: 27rem;
+    height: 2rem;
+
+    & > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        cursor: pointer;
+
+        & > svg {
+            color: #0095f6;
+            margin: 0 0.8rem 0 0.4rem;
+        }
+        & > span {
+            color: #3579ea;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+}
+
 .forgot-password {
     display: flex;
     justify-content: center;
@@ -113,6 +237,41 @@ html, body {
 
 /* footer */
 #root > footer {
-    height: 13.5rem;
-    background-color: brown;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 93.5rem;
+    margin: 0 auto;
+    margin-bottom: 5.2rem;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: center;
+
+    & > a {
+        font-size: 1.2rem;
+        color: #737373;
+        text-decoration: none;
+        margin: 0 0.8rem 1.2rem;
+    }
+    & > a:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-down {
+    display: flex;
+    justify-content: center;
+
+    margin: 1.2rem 0;
+
+    & > span {
+        font-size: 1.2rem;
+        color: #737373;
+    }
+    & > span:nth-of-type(2) {
+        margin-left: 1.6rem;
+    }
 }
